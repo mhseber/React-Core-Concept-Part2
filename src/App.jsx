@@ -1,5 +1,6 @@
 import "./App.css";
 import Counter from "./Counter";
+import Sports from "./Sports";
 
 function App() {
   // function handleClick() {
@@ -18,6 +19,8 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
+
+      <Sports />
 
       <Counter />
 
