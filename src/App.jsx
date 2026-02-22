@@ -1,7 +1,12 @@
+import { Suspense } from "react";
 import "./App.css";
 import Counter from "./Counter";
 import Sports from "./Sports";
+import Users from "./Users";
 
+const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(
+  (res) => res.json(),
+);
 function App() {
   // function handleClick() {
   //   alert("Button clicked!");
@@ -20,9 +25,13 @@ function App() {
     <>
       <h1>Vite + React</h1>
 
-      <Sports />
+      <Suspense fallback={<div>Loading users...</div>}>
+        <Users fetchUsers={fetchUsers} />
+      </Suspense>
 
-      <Counter />
+      {/* <Sports />
+
+      <Counter /> */}
 
       {/* <button className="btn " onClick={handleClick}>
         Click me
