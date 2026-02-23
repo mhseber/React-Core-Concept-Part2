@@ -57,9 +57,9 @@ function App() {
         <Users fetchUsers={fetchUsers} />
       </Suspense> */}
 
-      {/* <Sports />
+      {/* <Sports /> */}
 
-      <Counter /> */}
+      <Counter />
 
       {/* <button className="btn " onClick={handleClick}>
         Click me
