@@ -5,6 +5,7 @@ import Sports from "./Sports";
 import Users from "./Users";
 import Student from "./Student";
 import Officer from "./Officer";
+import MultiCounter from "./MultiCounter";
 
 // const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(
 //   (res) => res.json(),
@@ -26,32 +27,39 @@ function App() {
 
   // p1
 
-  const studentInfo = {
-    id: 20021,
-    name: "MH.SEBER",
-    gpa: 3.0,
-  };
+  // const studentInfo = {
+  //   id: 20021,
+  //   name: "MH.SEBER",
+  //   gpa: 3.0,
+  // };
 
-  const officeDetails = {
-    name: "woadud",
-    group: "a2w",
-    post: "Dhaka",
-    office: "MH-Group",
-  };
+  // const officeDetails = {
+  //   name: "woadud",
+  //   group: "a2w",
+  //   post: "Dhaka",
+  //   office: "MH-Group",
+  // };
 
   return (
     <>
       <h1>Vite + React</h1>
 
       <div>
-        <h2>Student Information</h2>
-        <Student info={studentInfo} />
+        <h1>Multiple Counters Practice</h1>
+        <MultiCounter title="Counter:  +10 Step" step={10} />
+        <MultiCounter title="Counter:  -5 Step" step={-5} />
+        <MultiCounter title="Counter:  Stop at 100" step={20} limit={100} />
       </div>
 
-      <div>
+      {/* <div>
+        <h2>Student Information</h2>
+        <Student info={studentInfo} />
+      </div> */}
+
+      {/* <div>
         <h1>Office Information</h1>
         <Officer details={officeDetails} />
-      </div>
+      </div> */}
 
       {/* <Suspense fallback={<div>Loading users...</div>}>
         <Users fetchUsers={fetchUsers} />
@@ -59,7 +67,7 @@ function App() {
 
       {/* <Sports /> */}
 
-      <Counter />
+      {/* <Counter /> */}
 
       {/* <button className="btn " onClick={handleClick}>
         Click me
