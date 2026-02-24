@@ -47,7 +47,7 @@ function App() {
       <div>
         <h1>Multiple Counters Practice</h1>
         <MultiCounter title="Counter:  +10 Step" step={10} />
-        <MultiCounter title="Counter:  -5 Step" step={-5} />
+        <MultiCounter title="Counter:  -5 Steps" step={-5} />
         <MultiCounter title="Counter:  Stop at 100" step={20} limit={100} />
       </div>
 
