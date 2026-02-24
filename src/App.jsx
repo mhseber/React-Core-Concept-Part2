@@ -6,6 +6,7 @@ import Users from "./Users";
 import Student from "./Student";
 import Officer from "./Officer";
 import MultiCounter from "./MultiCounter";
+import Auth from "./Auth";
 
 // const fetchUsers = fetch("https://jsonplaceholder.typicode.com/users").then(
 //   (res) => res.json(),
@@ -49,6 +50,11 @@ function App() {
         <MultiCounter title="Counter:  +10 Step" step={10} />
         <MultiCounter title="Counter:  -5 Steps" step={-5} />
         <MultiCounter title="Counter:  Stop at 100" step={20} limit={100} />
+      </div>
+
+      <div>
+        <h1>LogIn ---LogOut</h1>
+        <Auth />
       </div>
 
       {/* <div>
